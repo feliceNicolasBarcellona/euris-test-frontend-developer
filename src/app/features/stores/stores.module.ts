@@ -1,3 +1,5 @@
+
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,7 +13,8 @@ import { StoresComponent } from './stores.component';
   ],
   imports: [
     CommonModule,
-    StoresRoutingModule
+    StoresRoutingModule,
+
   ]
 })
 export class StoresModule { }

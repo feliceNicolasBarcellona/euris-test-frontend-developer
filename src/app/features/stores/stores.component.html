@@ -1,1 +1,8 @@
-<p>stores works!</p>
+<div class="card text-dark bg-light my-3" *ngFor="let store of stores" style="max-width: 18rem; border-radius: 15px;">
+  <a>
+    <div class="card-header">{{store.name}}</div>
+    <div class="card-body">
+      <h6 class="card-title">{{store.category}}</h6>
+    </div>
+  </a>
+</div>
