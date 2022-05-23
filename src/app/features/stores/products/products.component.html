@@ -1,0 +1,35 @@
+<mat-list>
+  <ng-container *ngFor="let prod  of products">
+    <mat-list-item>
+      <h3 mat-line>{{ prod.title}} ({{ prod.description }})</h3>
+
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item >
+          <mat-icon>delete</mat-icon>
+          <span>Delete</span>
+        </button>
+      </mat-menu>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+  </ng-container>
+</mat-list>
+
+<button
+  mat-fab
+  color="primary"
+  matTooltip="Add new User"
+>
+  <mat-icon>add</mat-icon>
+</button>
+
+<button
+  mat-mini-fab
+  color="warn"
+  matTooltip="Help"
+>
+  <mat-icon>help_outline</mat-icon>
+</button>

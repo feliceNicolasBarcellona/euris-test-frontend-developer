@@ -18,7 +18,8 @@ export class StoresComponent implements OnInit {
       id: res.id,
       category: res.data.category,
       name: res.data.name,
-      employees: res.data.employees
+      employees: res.data.employees,
+
     })))
   }
 

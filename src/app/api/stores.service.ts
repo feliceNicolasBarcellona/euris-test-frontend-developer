@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Data, Store } from './../models/store';
-import { Product } from './../models/product';
+import { PData, Product } from './../models/product';
 import { Category } from '../models/categories';
 
 
@@ -27,8 +27,8 @@ export class StoresService {
     return this.http.get<Store>(`${this.apiUrl}/${idStore}`)
   }
 
-  getProducts(): Observable<Product[]>{
-    return this.http.get<Product[]>(`${this.apiUrl}/${this.idStore}/products`)
+  getProducts(): Observable<PData[]>{
+    return this.http.get<PData[]>(`${this.apiUrl}/${this.idStore}/products`)
   }
 
   getProductsById(idProduct: string): Observable<Product>{

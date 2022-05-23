@@ -6,3 +6,8 @@ export interface Product {
   employee: string;
   price: number;
 }
+
+export interface PData {
+  id: string,
+  data: Product,
+}
